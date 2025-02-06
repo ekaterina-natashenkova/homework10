@@ -13,14 +13,14 @@ public class Main {
 
         System.out.println("\nзадача 2");
         int currentYear = LocalDate.now().getYear();
-        int clientDeviceYear = 2021;
-        int clientOS = 1;
+        int clientDeviceYear = 2024;
+        int clientOS = 0;
         getApp(clientOS, clientDeviceYear, currentYear);
 
 
         System.out.println("\nзадача 3");
         int deliveryDistance = 95;
-        getOrder(deliveryDistance);
+        getOrderDeliveryTime(deliveryDistance);
 
     }
 
@@ -58,7 +58,7 @@ public class Main {
 
     }
 
-    public static int getOrder(int deliveryDistance) {
+    public static int getOrderDeliveryTime(int deliveryDistance) {
         if (deliveryDistance <= 20) {
             System.out.println("Потребуется дней: " + 1);
             return 1;
